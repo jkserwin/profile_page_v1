@@ -18,8 +18,10 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: #070707;
 }
+
+
 
 /* Section Styles */
 
@@ -57,7 +59,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/japan-alley.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -74,8 +76,28 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1) rotate(1080deg);
+  border: 3px solid #d94e0b;
 }
+
+header .location:hover {
+  transform: scale(.9);
+  transition-duration: 1s;
+}
+
+.Jake:hover {
+  color: white;
+  animation-name: go-crazy;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes go-crazy {
+  0%   {color: black; background-color: white;}
+  50% {color: white; background-color: #254877;}
+  100% {color: black; background-color: white;}
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -85,8 +107,8 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #070707;
+  color: #d94e0b;
 }
 .card {
   margin: 30px;
@@ -98,26 +120,75 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.card img {
+  max-width: 200px;
+  height: auto;
+  padding: 20px;
+  align-items: center;
+}
+
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #254877;
 }
 
 ul.skills {
-  padding: 0;
+  padding: 10px;
   text-align: center;
 }
 
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #d94e0b;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #4e1408;
+}
+
+ul.schools {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.schools li {
+  border-radius: 6px;
+  display: block;
+  background: #4e1408;
+  color: white;
+  padding: 10px;
+  /* margin: 2px; */
+}
+
+#school2 {
+  background: #d94e0b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#school3 {
+  background: #254877;
+}
+
+.education {
+  text-align: center;
+  padding: 20px 40px 40px 20px;
+}
+
+.education p {
+  margin-top: 40px;
+}
+
+.contact a {
+  color: #070707
+}
+
+.contact a:hover {
+  color: #4e1408
 }
 
 footer {
